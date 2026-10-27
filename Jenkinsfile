@@ -21,6 +21,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+
+        stage('Package') {
+            steps {
+                sh 'mvn package'
+            }
+        }
     }
 
     post {
@@ -30,11 +36,11 @@ pipeline {
         }
 
         success {
-            echo 'Build and tests passed!'
+            echo 'Build, tests, and packaging passed!'
         }
 
         failure {
-            echo 'Build or tests failed. Check Console Output.'
+            echo 'Pipeline failed. Check Console Output.'
         }
     }
 }
