@@ -26,4 +26,5 @@ Fixed booking capacity validation and added regression tests. Unknown equipment 
 
 ## Git
 Branch: feature/equipment-lookup-validation
-
+![alt text](image-1.png)
+![alt text](image.png)
